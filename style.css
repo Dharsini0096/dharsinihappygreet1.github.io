@@ -193,7 +193,7 @@
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-top: 18px solid orange;
-	z-index: -2;
+	z-index: -5;
 }
 .shows .child2
 {
@@ -218,7 +218,7 @@
 	border-right: 10px solid transparent;
 	border-top: 18px solid orange;
 	display: none;
-	z-index: -2;
+	z-index: -5;
 }
 .cont
 {
