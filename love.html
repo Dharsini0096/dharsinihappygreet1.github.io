@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop Now</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header" id="header">
+		<h1>Happy Greetings !!! </h1>
+		<span class="menu_icon" onclick="showmenu()">
+			<div class="first-line"></div>
+			<div class="second-line"></div>
+			<div class="third-line"></div>
+		</span>
+		<div class="menu" id="menu">
+			<ul>
+				<li><a href="login.html">Sign Out</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="buy-container">
+		<div class="buy-box">
+			<h4>Shop Now >> Love Cards</h4>
+			<div class="buy-image">
+				<table>
+					<tr>
+						<td class="big-image"><img src="images/love1.jpg"></td>
+					</tr>
+					<tr>
+						<td class="big-image" ><img src="images/love1.1.jpg"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="buy-image-gallery">
+				<table>
+					<tr>
+						<td class="small-image"><img src="images/love1.jpg" onclick="showimg(0);"></td>
+						<td class="small-image"><img src="images/love1.1.jpg" onclick="showimg(1);"></td>		
+					</tr>
+				</table>
+			</div>
+			<script type="text/javascript">
+				showimg(0);
+			</script>
+			<div class="cart-buy">
+				<a href="#">Add to Cart</a>
+				<a href="#" onclick="showbuy()">Buy Now</a>
+			</div>
+			<div class="descrip">
+				<h4>Description :</h4>
+				<p>Greeting cards are a very casual gift which can be presented to any of your friend or closed ones. By personalizing it you make the card according to the idea you have thought. For any types of occasions whether it may be a festival, the cards are available in all the categories.</p>
+			</div>
+			<div class="script-buy" id="script-buy">
+				<div class="script-buy-box" align="center">
+					<h4>Thanks For Shopping !!</h4>
+					<h5>Your order has been placed successfylly !</h5>
+					<button onclick="closebuy()">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-content">Copyright - Happy Greetings<br>Ping Us : 044 - 2345 2345</div>	
+	</div>
+</body>
+</html>

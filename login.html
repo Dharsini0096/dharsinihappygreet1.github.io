@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Greetings | Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.footer
+		{
+			position: absolute;
+			top: 130vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="header" id="header">
+		<h1>Happy Greetings !!! </h1>
+		<span class="menu_icon" onclick="showmenu()">
+			<div class="first-line"></div>
+			<div class="second-line"></div>
+			<div class="third-line"></div>
+		</span>
+		<div class="menu" id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="login-container">
+		<div class="login-box">
+			<div class="login-signup" id="login-signup">
+				<ul>
+					<li><a href="login.html" class="child1" id="child1">Login</a></li>
+					<li><a href="#" id="child2" class="child2" onclick="showsignup()">Sign Up</a></li>
+				</ul>
+			</div>
+			<div class="triangle" id="triangle"></div>
+			<div class="triangles" id="triangles"></div>
+			<div class="cont">
+				<div class="login" id="login">
+					<form>
+						<h1>Login</h1>
+						<p>*Login To Place Your Orders!!</p>
+						<input type="text" name="E-mail" placeholder="E-mail">
+						<input type="password" name="Password" placeholder="Password">
+						<div><a href="shopnow.html">Login</a></div>
+					</form>
+				</div>
+				<div class="signup" id="signup">
+					<form>
+						<span><h1>SignUp</h1></span>
+						<p>Create Your Account !!</p>
+						<input type="text" name="First-Name" placeholder="First Name">
+						<input type="text" name="Last-Name" placeholder="Last Name">
+						<input type="text" name="E-mail Id" placeholder="E-mail Id">
+						<input type="password" name="Password" placeholder="Password">
+						<input type="password" name="Re-Password" placeholder="Re-Enter Password">
+						<div><a href="#">Sign Up</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-content">Copyright - Happy Greetings<br>Ping Us : 044 - 2345 2345</div>	
+	</div>
+</body>
+</html>

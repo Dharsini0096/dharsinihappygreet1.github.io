@@ -1,0 +1,599 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+}
+.body
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*Index Portion*/
+.header
+{
+	width: 100%;
+	height: 10vh;
+	background-color: rgba(255,152,0,0.8);
+	position: relative;
+}
+.menu_icon div
+{
+	width: 18px;
+	height: 2px;
+	background-color: white;
+	margin: 5px 0;
+}
+.menu_icon
+{
+	position: absolute;
+	right: 5%;
+	top: 28%;
+	cursor: pointer;
+	padding: 2px 3px;
+}
+.menu_icon:active
+{
+	border: 1px solid black;
+}
+.header h1
+{
+	font-size: 20px;
+	font-family: Cambria;
+	text-align: center;
+	color: white;
+	padding-top: 1rem;
+}
+.menu
+{
+	display: none;
+	z-index: 100;
+	position: absolute;
+	top: 10vh;
+	right: 0;
+}
+.menu ul li
+{
+	background-color: rgba(255,152,0,1);
+	list-style: none;
+	padding: 18px 20px;
+}
+.menu ul li a
+{
+	text-decoration: none;
+	color: white;
+	padding-left: 14px;
+	cursor: pointer;
+}
+.menu ul li:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,152,0,0.5);
+}
+.close .menu_icon .second-line
+{
+	opacity: 0;
+}
+.close .menu_icon .first-line
+{
+	transform: rotate(45deg);
+	position: absolute;
+	top: 40%;
+}
+.close .menu_icon .third-line
+{
+	transform: rotate(-45deg);
+}
+.close .menu
+{
+	display: block;
+}
+
+
+/*Content Portion */
+.content
+{	height: 35rem;
+	background-image: url(images/backgd.jpg);
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-size: cover;
+	background-position: center;
+}
+.box
+{
+	background-color: rgba(0,0,0,0.65);
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 30%;
+	left: 24%;
+	width: 50%;
+	height: 40%;
+	padding-top: 3rem;
+}
+.box span
+{
+	font-size: 20px;
+	font-family: Candara;
+}
+.box div
+{
+	margin-top: 2rem;
+}
+.box div a
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgba(255,152,0,1); 
+	padding: 14px 10px;
+	border-radius: 30px;
+	cursor: pointer;
+	font-family: Candara;
+}
+.box div a:hover
+{
+	background-color: rgba(255,152,0,0.8);	
+}
+
+
+
+
+/*Login-Signup*/
+.login-container
+{
+	position: relative;
+	background-color: rgba(255,152,0,0.2);	
+	width: 100%;
+	height: 129vh;
+}
+.login-box
+{
+	padding-top: 3rem;
+}
+.login-signup ul
+{
+	text-align: center;
+}
+.login-signup ul li
+{
+	list-style-type: none;
+	display: inline;
+	margin-right: 1rem;
+	text-align: center;
+}
+
+.login-signup ul li a
+{
+	width: 100%;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	background-color: orange;	
+	margin-right: 1rem;
+	cursor: pointer;
+	padding: 12px 16px;
+}
+.login-signup .child1
+{
+	width: 100%;
+	text-decoration: none;
+	color: rgba(255,152,0,1);
+	background-color: rgba(255,255,255,0.5);	
+	margin-right: 1rem;
+	cursor: pointer;
+	padding: 12px 16px;	
+	border-bottom-style: solid;
+	border-bottom-color: orange;
+	box-shadow: 4px 4px rgba(255,152,0,0.7);
+}
+.triangle 
+{
+	position: absolute;
+	top: 4.8rem;
+	left: 8rem;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 18px solid orange;
+}
+.shows .child2
+{
+	width: 100%;
+	text-decoration: none;
+	color: rgba(255,152,0,1);
+	background-color: rgba(255,255,255,0.5);	
+	margin-right: 1rem;
+	cursor: pointer;
+	padding: 12px 16px;	
+	border-bottom-style: solid;
+	border-bottom-color: orange;
+	box-shadow: 4px 4px rgba(255,152,0,0.7);	
+}
+
+.triangles
+{
+	position: absolute;
+	top: 4.8rem;
+	left: 15rem;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 18px solid orange;
+	display: none;
+}
+.cont
+{
+	position: relative;
+	top: 4rem;
+	width: 80%;
+	margin: 0 2.3rem;
+}
+.cont form
+{
+	position: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+.login , .signup
+{
+	background-color: rgba(255,255,255,0.5);
+}
+.login
+{
+	height: 43vh;
+}
+.signup
+{
+	position: absolute;
+	height: 65vh;
+	top: 0;
+	display: none;
+}
+.login h1 , .signup h1
+{
+	padding-top: 1rem;
+	color: rgba(255,152,0,1);
+	font-family: Candara;
+}
+.login p , .signup p
+{
+	color: rgba(255,152,0,1);
+	font-family: Lato;
+	font-size: 12px;
+	padding-top: 0.5rem;
+}
+.login form input,.signup form input
+{
+	width: 100%;
+	margin-top: 1.5rem;
+	padding: 4px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(255,152,0,1);
+	border-bottom-width: 1.4px;
+}
+.login div , .signup div
+{
+	margin: 2.5rem 0;
+}
+.login div a , .signup div a
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgba(255,152,0,1); 
+	padding: 14px 10px;
+	cursor: pointer;
+	font-family: Candara;
+}
+
+
+
+
+
+
+/*Shop Now Portion*/
+.img-container
+{
+	position: relative;
+	background-color: rgba(255,152,0,0.2);
+	width: 100%;
+	height: 100%;
+}
+.img-box
+{
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img-box img
+{
+	width: 10rem;
+	height: 10rem;
+	float: bottom;
+	margin-top: 2rem;
+}
+.image
+{
+	background-color: rgba(255,255,255,0.5);
+	width: 15rem;
+	height: 17rem;
+	text-align: center;
+	margin-top: 2rem;
+	border-radius: 25px;
+	box-shadow: 4px 4px rgba(255,152,0,0.7) , 8px 8px rgba(255,152,0,0.1);	
+}
+.image div
+{
+	margin-top: 1.8rem;
+}
+.image div a
+{
+	width: 100%;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	background-color: orange;	
+	cursor: pointer;
+	padding: 12px 16px;	
+	font-family: Candara;
+}
+.image div a:hover
+{
+	background-color: rgba(255,152,0,0.8);	
+}
+
+
+
+
+
+
+/*Buy Page Portion */
+.buy-container
+{
+	background-color: rgba(255,152,0,0.2);
+	position: relative;
+}
+.buy-box
+{
+	padding: 1.5rem 0;
+}
+.buy-box h4 , .descrip h4
+{
+	color: rgba(255,152,0,1);
+	padding: 1rem;
+}
+.buy-image , .buy-image-gallery
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.buy-image .big-image img
+{
+	width: 65vw;
+	height: 40vh;
+}
+.big-image
+{
+	display: none;
+}
+.buy-image-gallery img:hover
+{
+	cursor: pointer;
+	opacity: 0.5;
+}
+.cart-buy
+{
+	padding: 2rem 0;
+	text-align: center;
+}
+.cart-buy a
+{
+	width: 100%;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	background-color: orange;	
+	cursor: pointer;
+	padding: 12px 16px;	
+	font-family: Candara;
+	display: inline;	
+}
+.cart-buy a:hover
+{
+	background-color: rgba(255,152,0,0.8);	
+}
+.descrip
+{
+	padding: 2rem 0 0 0;
+}
+.descrip p
+{
+	text-indent: 50px;
+	padding: 0.6rem;
+	color: rgba(255,152,0,1);
+	font-family: Candara;
+}
+.script-buy
+{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+}
+.script-buy-box
+{
+	background-color: white;
+	width: 14rem;
+	height: 35vh;
+	margin-top: 10rem;
+	margin-left: 19vw;
+}
+.script-buy-box h4 , .script-buy-box h5
+{
+	color: rgba(255,152,0,1);
+	font-family: Candara;
+	text-align: center;
+	padding: 1.5rem 1.5rem;
+}
+.script-buy-box button
+{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	background-color: orange;	
+	cursor: pointer;
+	padding: 12px 16px;	
+	font-family: Candara;
+	border: none;
+	outline: none;
+}
+.script-buy-box button:hover
+{
+	background-color: rgba(255,152,0,0.8);		
+}
+
+
+/*Contact Portion*/
+.contact
+{
+	background-color: rgba(255,152,0,0.2);
+	width: 100%;
+	height: 81vh;
+}
+.contact-box
+{
+	padding: 4em 0 ;
+	text-align: center;
+	color: rgba(255,152,0,1);
+}
+.contact-box h1
+{
+	padding-bottom: 2rem;
+}
+
+
+
+
+
+
+/*Footer Portion */
+.footer
+{
+	background-color: rgba(255,152,0,1);
+	height: 9vh;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	font-family: Cambria;
+	width: 100%;
+	display: block;
+}
+.footer-content
+{
+	padding-top: 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 600px)
+{
+.triangle
+{
+	left: 16rem;
+}
+.triangles
+{
+	left: 22rem;
+}
+.script-buy-box
+{
+	margin-left: 30vw;
+}
+}
+
+@media only screen and (min-width: 768px)
+{
+.cont
+{
+	margin: 0 5rem;
+}
+.triangle
+{
+	left: 21rem;
+}
+.triangles
+{
+	left: 27rem;
+}
+.script-buy-box
+{
+	margin-left: 35vw;
+}
+}
+
+
+@media only screen and (min-width: 992px)
+{
+.cont
+{
+	margin: 0 5rem;
+}
+.triangle
+{
+	left: 28rem;
+}
+.triangles
+{
+	left: 35rem;
+}
+.script-buy-box
+{
+	margin-left: 50%;
+}
+}
+
+
+
+@media only screen and (min-width: 1200px)
+{
+.box
+{
+	width: 25%;
+	left: 37%;
+
+}
+.cont
+{
+	margin: 0 9rem;
+}
+.triangle
+{
+	left: 38rem;
+	top: 5rem;
+}
+.triangles
+{
+	left: 45rem;
+	top: 5rem;
+}
+.signup
+{
+	margin: 0 11rem;
+}
+.buy-image .big-image img
+{
+	width: 45vw;
+	height: 45vh;
+}
+.script-buy-box
+{
+	margin-left: 40%;
+}
+}
+
+
